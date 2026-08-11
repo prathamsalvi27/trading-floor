@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"/Users/prathameshsalvi/Documents/AIProjects/agents-main/6_mcp\" -type f -not -path \"*/node_modules/*\" -not -path \"*/.git/*\" | sort)",
+      "Read(//Users/prathameshsalvi/Documents/AIProjects/agents-main/6_mcp/**)",
+      "Read(//Users/prathameshsalvi/Documents/AIProjects/agents-main/6_mcp/backend/**)",
+      "WebSearch",
+      "WebFetch(domain:chartrow.com)",
+      "Bash(cat ~/.ssh/config 2>&1)",
+      "Read(//Users/prathameshsalvi/.ssh/**)",
+      "Bash(git config *)"
+    ]
+  }
+}
