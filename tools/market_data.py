@@ -13,7 +13,7 @@ def get_stock_price(symbol: str) -> float:
         "symbol": symbol,
         "apikey": ALPHA_VANTAGE_API_KEY,
     }
-    logger.info(f"REQUEST GET {url} params={params}")
+    logger.info(f"REQUEST GET {url} params={ {**params, 'apikey': '***'} }")
     response = requests.get(url, params=params)
     data = response.json()
     logger.info(f"RESPONSE {response.status_code} {data}")
@@ -32,7 +32,7 @@ def get_news(symbol: str, limit: int = 5) -> list[str]:
         "pageSize": limit,
         "language": "en",
     }
-    logger.info(f"REQUEST GET {url} params={params}")
+    logger.info(f"REQUEST GET {url} params={ {**params, 'apiKey': '***'} }")
     response = requests.get(url, params=params)
     data = response.json()
     logger.info(f"RESPONSE {response.status_code} {data}")
