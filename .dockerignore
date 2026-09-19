@@ -1,0 +1,8 @@
+.venv
+.git
+__pycache__
+*.pyc
+.env
+trading_floor.db
+.DS_Store
+.claude

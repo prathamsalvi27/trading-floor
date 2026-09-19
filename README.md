@@ -1,3 +1,13 @@
+---
+title: Trading Floor
+emoji: 📈
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Trading Floor
 
 A personal stock portfolio simulator built to learn agentic AI patterns: a single LLM orchestrated by LangGraph, calling only deterministic tools exposed over MCP. Built as a learning project, not a real trading system — all money and trades are fake.

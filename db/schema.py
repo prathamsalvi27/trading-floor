@@ -11,6 +11,7 @@ def get_connection():
         _connection = sqlite3.connect(DB_PATH, check_same_thread=False)
         _connection.row_factory = sqlite3.Row
         _connection.execute("PRAGMA foreign_keys = ON")
+        init_db()
     return _connection
 
 
